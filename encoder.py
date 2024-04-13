@@ -38,6 +38,10 @@ def main():
             password = input("Please enter your password to encode: ")
             encoded_password = encode(password)
             print("Your password has been encoded and stored!")
+        elif choice == 2:
+            if encoded_password:
+                original_password = decode(encoded_password)
+                print("The encoded password is {}, and the original password is {}.".format(encoded_password,original_password))
         elif choice == 3:
             return False
 
